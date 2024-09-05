@@ -52,10 +52,28 @@
             <li>Компаниям друзей</li>
             <li>Семьям с детьми старше 12 лет</li>
         </ul>
-        <img src="images/1-6495.jpg"
-            alt="Views of Ulyanovsk"
-            width="824"
-            height="547">
+
+        <table width="500">
+            <th width="200">Тариф</th>
+            <th width="300">Группа</th>
+            <tr>
+                <td width="200">База</td>
+                <td width="300">От 15 человек</td>
+            </tr>
+            <tr></tr>
+                <td width="200">Комфорт</td>
+                <td width="300">От 7 человек</td>
+            </tr>
+        </table>
+
+        <form>
+            <input type="checkbox" name="services" value="transfer">
+            <label>Трансфер до места начала экскурсии</label>
+            <br>
+            <input type="checkbox" name="services" value="disabled_transfer">
+            <label>Трансфер для маломобильных групп населения</label>
+        </form>
+
         <h3>Отзывы клиентов:</h3>
         <figure>
             <img src="images/Аня и Серёжа, Пермь.png"
@@ -78,6 +96,18 @@
             прогулку по Ульяновску! Именно такие экскурсии позволяют составить 
             приятные впечатления о городе и дают понимание о его истории.
         </blockquote>
+
+        <form>
+            <input type="text" placeholder="Имя"><br>
+            <input type="text" placeholder="Фамилия"><br>
+            <button tipe="submit">Отправить</button>
+        </form>
+        <select name="tariff" id="tariff">
+            <label for="tariff">Выберете тариф</label>
+            <option value="base">База</option>
+            <option value="comfort">Комфорт</option>
+        </select>
+        <br>
         <a href="https://t.me/LivanovSS">Свяжитесь со мной для бронирования экскурсии</a>
     </body>
 </html>
